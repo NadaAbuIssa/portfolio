@@ -44,7 +44,7 @@ export default function Header() {
           {/* logo img */}
           <div className="relative flex items-center overflow-hidden user-select-none">
             <img
-              src="/catLogo.png"
+              src="./assets/catLogo.png"
               alt="logo"
               className="logo m-1 float-left sm:h-20 sm:w-20 transition-transform duration-[1000ms] ease-in-out"
               style={{
@@ -77,7 +77,7 @@ export default function Header() {
                   `}
                 >
                   <img
-                    src="/handprint.png"
+                    src="./assets/handprint.png"
                     alt="cat print"
                     className="h-20 w-28 fixed opacity-50"
                   />

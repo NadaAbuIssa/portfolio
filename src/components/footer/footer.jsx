@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
           <div className="footer-avatar-container">
             <img
-              src="./catp1.png"
+              src="./assets/catp1.png"
               alt="animation-head"
               className="footer-avatar-img"
               id="footer-wala-avatar"
