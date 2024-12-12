@@ -487,6 +487,9 @@ firefly {
     width: 22px;
     height: 22px;
   }
+  #rights{
+    font-size: medium;
+  }
 }
 
 @media (max-width: 480px) {
@@ -505,5 +508,11 @@ firefly {
   .footer-pupil {
     width: 15px;
     height: 15px;
+  }
+  #Footer article{
+    font-size: small;
+  }
+  #rights{
+    font-size: small;
   }
 }

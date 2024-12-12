@@ -40,7 +40,7 @@ export default function Viewer() {
 
 // fireflies click effect
 console.clear();
-let am = 22;
+let am = 8;
 
 document.addEventListener("click", (e) => {
 	let xx = e.pageX;

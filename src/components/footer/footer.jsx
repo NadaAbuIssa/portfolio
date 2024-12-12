@@ -58,16 +58,13 @@ export default function Footer() {
 
   return (
     <footer id="Footer" className="bg-bkg-2">
-      <div className="footer-background">
-        <div className="footer-blob container sm md"></div>
+      <div className="text-4xl flex justify-center sm:text-2xl xs:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
+        <article tabIndex="0" aria-label="Garbage in 🧠 Garbage out">
+          "Garbage in 🧠 Garbage out"
+        </article>
       </div>
       <div className="footer-foreground">
         <div className="footercontainer">
-          <div className="text-xl flex justify-center">
-            <article tabIndex="0" aria-label="Garbage in 🧠 Garbage out">
-              "Garbage in 🧠 Garbage out"
-            </article>
-          </div>
           <div className="footer-avatar-container">
             <img
               src={cat}
@@ -84,7 +81,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="footer-text">
+          <div id="rights" className="footer-text">
             <p className="text-lg text-center">
               Made with ❤️ by{" "}
               <a

@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <section id="Projects" className="h-[150dvh] bg-bkg-2">
       <div className="flex flex-col justify-center items-center h-full p-16  sm lx md">
-        <h1 className="text-6xl font-mono tracking-tights text-white pb-10 leading-[45px]">
+        <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-mono tracking-tights text-white pb-10 leading-[45px]">
           Projects();
         </h1>
         {/* flex pb-10 container md sm snap-x md:snap-x hover:snap-x gap-16 overflow-x-auto */}
