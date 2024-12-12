@@ -1,11 +1,11 @@
 export default function Skills() {
   return (
     <div className="bg-bkg-2">
-      <section id="Skills" className="h-[100dvh]">
+      <section id="Skills" className="h-[140dvh]">
         <h1 className=" p-16 font-mono text-3xl text-center text-white-800 shadow-lg ">
           My TechStack
         </h1>
-        <div className="flex flex-col m-9 container sm md xl">
+        <div className="flex flex-col m-9 sm md xl" style={{ left: "15%" }}>
           <div className="grid grid-cols-2 | md:grid-cols-3 md:place-content-center | lg:grid-cols-5 mt-5">
             {/* html */}
             <div style={{ opacity: 1, transform: "none" }}>

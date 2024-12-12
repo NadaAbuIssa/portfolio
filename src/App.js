@@ -21,7 +21,7 @@ import Hero from './components/Hero';
 export default function Viewer() {
   const ref = useRef()
   return (
-    <div style={{ height: '100vh' }}>
+	<div style={{ height: '100vh', background: 'hsl(232.8, 65.8%, 14.9%)' }} >
       <Layout>
         <Hero />
       <About />

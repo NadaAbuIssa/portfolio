@@ -17,6 +17,7 @@ export default function Header() {
       img.style.display = "block";
     }
   };
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
@@ -48,7 +49,7 @@ export default function Header() {
             <img
               src={catlogo}
               alt="logo"
-              className="logo m-1 float-left sm:h-20 sm:w-20 transition-transform duration-[1000ms] ease-in-out"
+              className="logo m-1 float-left h-12 w-12 sm:h-20 sm:w-20 transition-transform duration-[1000ms] ease-in-out"
               style={{
                 position: "relative",
                 display: "flex",
@@ -57,11 +58,11 @@ export default function Header() {
               }}
             />
           </div>
-          <ul className="flex flex-wrap gap-5 justify-center text-base items-center w-[28rem] h-[inherit] sm:w-[40rem]">
+          <ul className="flex flex-wrap gap-2 justify-center text-sm items-center w-full sm:w-[40rem] md:gap-5 md:text-base">
             {linkData.map((link) => (
               <li
                 key={link.id}
-                className="relative flex justify-center items-center h-3/4 px-5"
+                className="relative flex justify-center items-center h-3/4 px-2 md:px-5"
               >
                 <a
                   href={link.url}
@@ -81,9 +82,8 @@ export default function Header() {
                   <img
                     src={handprint}
                     alt="cat print"
-                    className="h-20 w-28 fixed opacity-50"
+                    className="h-10 w-14 fixed opacity-50 sm:h-20 sm:w-28"
                   />
-
                   {link.name}
                 </a>
               </li>

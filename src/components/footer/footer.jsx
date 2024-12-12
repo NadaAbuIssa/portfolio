@@ -1,6 +1,61 @@
+import React, { useEffect } from "react";
+
 const cat = `${process.env.PUBLIC_URL}/assets/catp1.png`;
 
 export default function Footer() {
+  useEffect(() => {
+    const Pupils = document.getElementsByClassName("footer-pupil");
+    const pupilsArr = Array.from(Pupils);
+
+    let pupilStartPoint = -10;
+    let pupilRangeX = 20;
+    let pupilRangeY = 15;
+
+    // mouse X
+    let mouseXStartPoint = 0;
+    let mouseXEndPoint = window.innerWidth;
+    let currentXPosition = 0;
+    let fracXValue = 0;
+
+    // mouse Y position
+    let mouseYEndPoint = window.innerHeight;
+    let currentYPosition = 0;
+    let fracYValue = 0;
+
+    let mouseXRange = mouseXEndPoint - mouseXStartPoint;
+
+    const mouseMove = (event) => {
+      currentXPosition = event.clientX - mouseXStartPoint;
+      fracXValue = currentXPosition / mouseXRange;
+
+      currentYPosition = event.clientY;
+      fracYValue = currentYPosition / mouseYEndPoint;
+
+      // footer
+      let pupilXCurrrentPosition = pupilStartPoint + fracXValue * pupilRangeX;
+      let pupilYCurrrentPosition = pupilStartPoint + fracYValue * pupilRangeY;
+
+      // footer
+      pupilsArr.forEach((curPupil) => {
+        curPupil.style.transform = `translate(${pupilXCurrrentPosition}px, ${pupilYCurrrentPosition}px)`;
+      });
+    };
+
+    const windowResize = () => {
+      mouseXEndPoint = window.innerWidth;
+      mouseYEndPoint = window.innerHeight;
+      mouseXRange = mouseXEndPoint - mouseXStartPoint;
+    };
+
+    window.addEventListener("mousemove", mouseMove);
+    window.addEventListener("resize", windowResize);
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+      window.removeEventListener("resize", windowResize);
+    };
+  }, []);
+
   return (
     <footer id="Footer" className="bg-bkg-2">
       <div className="footer-background">
@@ -29,58 +84,20 @@ export default function Footer() {
               </div>
             </div>
           </div>
+          <div className="footer-text">
+            <p className="text-lg text-center">
+              Made with ❤️ by{" "}
+              <a
+                href="http://github.com/nadaabuissa"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Nada AbuIssa
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
   );
 }
-
-let Pupils = document.getElementsByClassName("footer-pupil");
-let pupilsArr = Array.from(Pupils);
-
-let pupilStartPoint = -10;
-let pupilRangeX = 20;
-let pupilRangeY = 15;
-
-// mouse X
-let mouseXStartPoint = 0;
-let mouseXEndPoint = window.innerWidth;
-let currentXPosition = 0;
-let fracXValue = 0;
-
-// mouse Y position
-let mouseYEndPoint = window.innerHeight;
-let currentYPosition = 0;
-let fracYValue = 0;
-
-let mouseXRange = mouseXEndPoint - mouseXStartPoint;
-
-const mouseMove = (event) => {
-  currentXPosition = event.clientX - mouseXStartPoint;
-  fracXValue = currentXPosition / mouseXRange;
-
-  currentYPosition = event.clientY;
-  fracYValue = currentYPosition / mouseYEndPoint;
-
-  // footer
-  let pupilXCurrrentPosition = pupilStartPoint + fracXValue * pupilRangeX;
-  let pupilYCurrrentPosition = pupilStartPoint + fracYValue * pupilRangeY;
-
-  // footer
-  pupilsArr.forEach((curPupil) => {
-    curPupil.style.transform = `translate(${pupilXCurrrentPosition}px, ${pupilYCurrrentPosition}px)`;
-  });
-};
-
-const windowResize = () => {
-  mouseXEndPoint = window.innerWidth;
-  mouseYEndPoint = window.innerHeight;
-  mouseXRange = mouseXEndPoint - mouseXStartPoint;
-};
-
-window.addEventListener("mousemove", mouseMove);
-window.addEventListener("resize", windowResize);
-
-onmousemove = () => {
-  windowResize();
-};
