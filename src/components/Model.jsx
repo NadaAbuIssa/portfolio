@@ -10,7 +10,9 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF("/pc_cat.glb");
+  const { nodes, materials } = useGLTF(
+    "https://sketchfab.com/3d-models/pc-cat-654cea4331b1498cb28003774fb27b3d"
+  );
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -651,4 +653,6 @@ export function Model(props) {
   );
 }
 
-useGLTF.preload("/pc_cat.glb");
+useGLTF.preload(
+  "https://sketchfab.com/3d-models/pc-cat-654cea4331b1498cb28003774fb27b3d"
+);

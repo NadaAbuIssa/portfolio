@@ -30,11 +30,11 @@ export default function About() {
           </h3>
           <p className="mt-5 text-xl text-text">
             I am actively seeking internship opportunities where I can apply my
-            data analysis skills, collaborate with talented teams, and
-            contribute to impactful projects. As a dedicated Linux user, I
-            thrive in open-source environments and am always eager to learn
-            about the latest trends and tools in the field. I look forward to
-            the opportunity to connect and explore potential collaborations.
+            skills, collaborate with talented teams, and contribute to impactful
+            projects. As a dedicated Linux user, I thrive in open-source
+            environments and am always eager to learn about the latest trends
+            and tools in the field. I look forward to the opportunity to connect
+            and explore potential collaborations.
           </p>
         </div>
       </div>

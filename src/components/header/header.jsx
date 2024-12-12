@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { linkData } from "../../lib/data";
+const catlogo = `${process.env.PUBLIC_URL}/assets/catLogo.png`;
+const handprint = `${process.env.PUBLIC_URL}/assets/handprint.png`;
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState("Home");
@@ -44,7 +46,7 @@ export default function Header() {
           {/* logo img */}
           <div className="relative flex items-center overflow-hidden user-select-none">
             <img
-              src="./assets/catLogo.png"
+              src={catlogo}
               alt="logo"
               className="logo m-1 float-left sm:h-20 sm:w-20 transition-transform duration-[1000ms] ease-in-out"
               style={{
@@ -77,7 +79,7 @@ export default function Header() {
                   `}
                 >
                   <img
-                    src="./assets/handprint.png"
+                    src={handprint}
                     alt="cat print"
                     className="h-20 w-28 fixed opacity-50"
                   />

@@ -1,3 +1,5 @@
+const cat = `${process.env.PUBLIC_URL}/assets/catp1.png`;
+
 export default function Footer() {
   return (
     <footer id="Footer" className="bg-bkg-2">
@@ -13,7 +15,7 @@ export default function Footer() {
           </div>
           <div className="footer-avatar-container">
             <img
-              src="./assets/catp1.png"
+              src={cat}
               alt="animation-head"
               className="footer-avatar-img"
               id="footer-wala-avatar"

@@ -1,5 +1,10 @@
 // import styles
-// import "../assets/projects/Projects.css";
+const bike = `${process.env.PUBLIC_URL}/assets/projects/project1.jpg`;
+const dataset = `${process.env.PUBLIC_URL}/assets/projects/project2.png`;
+const INV = `${process.env.PUBLIC_URL}/assets/projects/project3.jpg`;
+const saturn = `${process.env.PUBLIC_URL}/assets/projects/project4.png`;
+const translate = `${process.env.PUBLIC_URL}/assets/projects/project5.jpg`;
+
 export default function Projects() {
   return (
     <section id="Projects" className="h-[150dvh] bg-bkg-2">
@@ -16,11 +21,7 @@ export default function Projects() {
           <div className="flex space-x-4 p-4">
             {/* project1 */}
             <div className="scroll-ml-32 snap-start snap-always flex-shrink-0 w-64 card animate__animated animate__fadeInUp">
-              <img
-                src="./assets/projects/project1.jpg"
-                alt="Project Cover"
-                className="card-image"
-              />
+              <img src={INV} alt="Project Cover" className="card-image" />
               <div className="card-content">
                 <h2 className="card-title animate__animated animate__fadeInDown">
                   inventory-management-system
@@ -71,11 +72,7 @@ export default function Projects() {
 
             {/* Project 2 */}
             <div className="card animate__animated animate__fadeInUp snap-center snap-always flex-shrink-0 w-64">
-              <img
-                src="./assets/projects/project2.png"
-                alt="Project Cover"
-                className="card-image"
-              />
+              <img src={dataset} alt="Project Cover" className="card-image" />
               <div className="card-content">
                 <h2 className="card-title animate__animated animate__fadeInDown">
                   Dataset Preprocessing
@@ -125,11 +122,7 @@ export default function Projects() {
 
             {/* Project 3 */}
             <div className="card animate__animated animate__fadeInUp snap-center snap-always flex-shrink-0 w-64">
-              <img
-                src="./assets/projects/project2.png"
-                alt="Project Cover"
-                className="card-image"
-              />
+              <img src={saturn} alt="Project Cover" className="card-image" />
               <div className="card-content">
                 <h2 className="card-title animate__animated animate__fadeInDown">
                   Cloud services company
@@ -181,11 +174,7 @@ export default function Projects() {
 
             {/* Project 4 */}
             <div className="card animate__animated animate__fadeInUp snap-center snap-always flex-shrink-0 w-64">
-              <img
-                src="./assets/projects/project2.png"
-                alt="Project Cover"
-                className="card-image"
-              />
+              <img src={bike} alt="Project Cover" className="card-image" />
               <div className="card-content">
                 <h2 className="card-title animate__animated animate__fadeInDown">
                   Communicate-Data-Findings
@@ -233,41 +222,37 @@ export default function Projects() {
             </div>
             {/* project5 */}
             <div className="card animate__animated animate__fadeInUp snap-center snap-always flex-shrink-0 w-64">
-              <img
-                src="./assets/projects/project1.jpg"
-                alt="Project Cover"
-                className="card-image"
-              />
+              <img src={translate} alt="Project Cover" className="card-image" />
               <div className="card-content">
                 <h2 className="card-title animate__animated animate__fadeInDown">
-                  inventory-management-system
+                  Translate article by selection using Google Translate API
                 </h2>
                 <p className="card-description animate__animated animate__fadeIn">
-                  An inventory management system designed to track and manage a
-                  specific inventory.
+                  In this project, I built a web page that allows users to
+                  translate an article by selecting the text.
                 </p>
                 <div className="card-languages animate__animated animate__fadeIn">
                   <ul className=" flex gap-2 flex-wrap">
                     <li className="bg-accent px-3 py-1 font-semibold text-xs uppercase text-text rounded-lg">
-                      spring boot
+                      web development
                     </li>
                     <li className="bg-accent px-3 py-1 font-semibold text-xs uppercase text-text rounded-lg">
-                      java
+                      API
                     </li>
                     <li className="bg-accent px-3 py-1 font-semibold text-xs uppercase text-text rounded-lg">
-                      mysql
+                      HTML
                     </li>
                     <li className="bg-accent px-3 py-1 font-semibold text-xs uppercase text-text rounded-lg">
-                      swagger hub
+                      Java Script
                     </li>
                     <li className="bg-accent px-3 py-1 font-semibold text-xs uppercase text-text rounded-lg">
-                      postman
+                      Article
                     </li>
                   </ul>
                 </div>
                 <a
                   className="flex btn-github"
-                  href="https://github.com/NadaAbuIssa/inventory-management-system"
+                  href="https://nadaabuissa.github.io/Third-Project/article.html"
                 >
                   <svg
                     width="16"
