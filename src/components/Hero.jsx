@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="relative mt-10 md:mt-0 md:absolute md:top-60 md:left-20">
         <div className="blob"></div>
         <h1
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left "
+          className="text-xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center md:text-left "
           style={{ top: "5%" }}
         >
           Hi, I'm Nada AbuIssa
