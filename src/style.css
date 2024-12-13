@@ -464,19 +464,23 @@ firefly {
   color: #000;
 }
 @media (max-width: 1024px) {
-
-  #home h1{
+  .logo {
+    display: flex;
+  }
+  #home h1 {
     font-size: 35px;
   }
- 
 }
 
 @media (max-width: 768px) {
+  .logo {
+    display: flex;
+  }
   .footer-avatar-container {
     width: 180px;
   }
-  #home h1{
-    font-size:30px;
+  #home h1 {
+    font-size: 30px;
   }
   .footer-avatar-eye {
     width: 42px;
@@ -487,17 +491,31 @@ firefly {
     width: 22px;
     height: 22px;
   }
-  #rights{
+  #rights {
     font-size: medium;
   }
 }
 
+@media (max-width: 530px) {
+  .logo {
+    display: none !important;
+  }
+}
+@media (max-width: 440px) {
+  #nav {
+    width: 20rem;
+  }
+}
 @media (max-width: 480px) {
+  #nav {
+    width: 23rem;
+  }
   .footer-avatar-container {
     width: 150px;
-    left:50%;
+    left: 50%;
   }
-  #home h1{
+
+  #home h1 {
     font-size: 20px;
   }
   .footer-avatar-eye {
@@ -509,10 +527,10 @@ firefly {
     width: 15px;
     height: 15px;
   }
-  #Footer article{
+  #Footer article {
     font-size: small;
   }
-  #rights{
+  #rights {
     font-size: small;
   }
 }
