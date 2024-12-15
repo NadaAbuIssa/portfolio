@@ -10,7 +10,7 @@ export default function Hero() {
         src={imagePath}
         alt="a cat"
         className="relative mx-auto mt-10 md:mt-20 md:absolute md:right-0 md:mt-40 md:mr-10"
-        style={{ width: "50vh", maxWidth: "100%" }}
+        style={{ width: "50vh", maxWidth: "100%", right: "5%" }}
       />
       <div className="relative mt-10 md:mt-0 md:absolute md:top-60 md:left-20">
         <div className="blob"></div>

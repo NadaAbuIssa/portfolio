@@ -495,7 +495,9 @@ firefly {
     font-size: medium;
   }
 }
-
+.text-xs {
+  font-size: 0.55rem;
+}
 @media (max-width: 530px) {
   .logo {
     display: none !important;
@@ -522,10 +524,13 @@ firefly {
     width: 34px;
     height: 34px;
   }
-
+  .footer-right-eye {
+    box-shadow: -14px 15px 5px rgba(0, 0, 0, 0.233) inset,
+      4px 3px 2px rgba(41, 33, 33, 0.644) inset;
+  }
   .footer-pupil {
-    width: 15px;
-    height: 15px;
+    width: 19px;
+    height: 19px;
   }
   #Footer article {
     font-size: small;

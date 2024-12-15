@@ -62,7 +62,7 @@ export default function Header() {
             />
           </div>
 
-          <ul className="flex flex-wrap gap-2 justify-center text-sm text-xs items-center w-full sm:w-[40rem] md:gap-5 md:text-base">
+          <ul className="flex flex-wrap gap-2 justify-center text-sm text-xs text-balance items-center w-full sm:w-[40rem] md:gap-5 md:text-base">
             {linkData.map((link) => (
               <li
                 key={link.id}

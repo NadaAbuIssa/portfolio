@@ -151,7 +151,7 @@ export default function Projects() {
                 </div>
                 <a
                   className="flex btn-github"
-                  href="https://github.com/NadaAbuIssa/Second-Task"
+                  href="https://nadaabuissa.github.io/Second-Task/"
                 >
                   <svg
                     width="16"
