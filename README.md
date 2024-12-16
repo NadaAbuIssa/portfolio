@@ -39,4 +39,4 @@ This is my personal portfolio built using React. It showcases intro about me my 
 
 ## Feedback
 
-If you have any feedback, please reach out to us at nadaaboissa@gmail.com. And don't forget to ⭐ Star it, if you like it!
+If you have any feedback, please reach out to me at nadaaboissa@gmail.com. And don't forget to ⭐ Star it, if you like it!
