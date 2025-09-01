@@ -1,17 +1,31 @@
+import { PositionPoint } from "@react-three/drei";
 import React from "react";
 export default function Hero() {
-  const imagePath = `${process.env.PUBLIC_URL}/assets/Animation.gif`;
+  const modelPath = `${process.env.PUBLIC_URL}/assets/pc_cat.glb`;
   return (
     <section
       id="Home"
-      className="flex flex-col md:flex-row justify-between mx-auto p-4"
+      className="flex flex-col md:flex-row mx-auto p-4"
     >
-      <img
+<model-viewer
+  alt="Cat PC"
+  src={process.env.PUBLIC_URL + "/assets/pc_cat.glb"}
+  ar
+  bounds="left"
+  auto-rotate
+  exposure="1"
+  style={{   width: "500px", height: "520px",right: "-25%"}}
+  shadow-intensity="1"
+  camera-controls
+   
+></model-viewer>
+
+            {/* <img
         src={imagePath}
         alt="a cat"
         className="relative mx-auto mt-10 md:mt-20 md:absolute md:right-0 md:mt-40 md:mr-10"
         style={{ width: "50vh", maxWidth: "100%", right: "5%" }}
-      />
+      /> */}
       <div className="relative mt-10 md:mt-0 md:absolute md:top-60 md:left-20">
         <div className="blob"></div>
         <h1
@@ -37,7 +51,6 @@ export default function Hero() {
     </section>
   );
 }
-
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
   const blob = document.querySelector(".blob");
